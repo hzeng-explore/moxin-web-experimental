@@ -1,138 +1,13 @@
 ---
 // Services page
+import Layout from "../layouts/Layout.astro";
 import '../styles/global.css';
 ---
 
-<html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Services - Moxin-Org</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-navy: #1a1d29;
-            --accent-blue: #3b82f6;
-            --accent-purple: #8b5cf6;
-            --text-primary: #ffffff;
-            --text-secondary: #94a3b8;
-            --border-color: #334155;
-            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1a1d29 0%, #1e293b 50%, #0f172a 100%);
-            min-height: 100vh;
-        }
-        
-        .glass-nav {
-            backdrop-filter: blur(20px);
-            background: rgba(26, 29, 41, 0.8);
-            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--accent-blue);
-        }
-        
-        .tech-grid {
-            background-image: 
-                linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-        }
-        
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        
-        .scroll-reveal.revealed {
-            opacity: 1;
-            transform: translateY(0);
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .deployment-option {
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .deployment-option.active {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
-            border-color: var(--accent-blue);
-        }
-        
-        .service-tier {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
-            border: 1px solid rgba(59, 130, 246, 0.2);
-        }
-        
-        .service-tier.featured {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
-            border-color: var(--accent-blue);
-            transform: scale(1.05);
-        }
-        
-        .timeline-item {
-            position: relative;
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 60px;
-            bottom: -20px;
-            width: 2px;
-            background: linear-gradient(to bottom, var(--accent-blue), transparent);
-        }
-        
-        .timeline-item:last-child::before {
-            display: none;
-        }
-    </style>
-
-</head>
-<body>
-
-    <!-- Navigation -->
-    <nav class="glass-nav fixed top-0 left-0 right-0 z-50 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <img src="/images/moxin.png" alt="Moxin-Org" class="w-8 h-8">
-                <span class="text-white font-bold text-xl">Moxin-Org</span>
-            </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
-                <a href="/solutions/" class="text-gray-300 hover:text-white transition-colors">Solutions</a>
-                <a href="#services" class="text-white">Services</a>
-                <a href="/developer.html" class="text-gray-300 hover:text-white transition-colors">Developers</a>
-            </div>
-            <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all">
-                Get Demo
-            </button>
-        </div>
-    </nav>
-
+<Layout
+  title="Professional Services - Moxin Intelligence"
+  description="End-to-end AI implementation services from architecture design to production deployment. Expert guidance at every stage of your AI transformation journey."
+>
     <!-- Hero Section -->
     <section class="pt-24 pb-16 px-6 tech-grid">
         <div class="max-w-7xl mx-auto text-center">
@@ -141,7 +16,7 @@ import '../styles/global.css';
                 <span class="gradient-text">Services</span>
             </h1>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-                End-to-end AI implementation services from architecture design to production deployment. 
+                End-to-end AI implementation services from architecture design to production deployment.
                 Expert guidance at every stage of your AI transformation journey.
             </p>
         </div>
@@ -204,7 +79,7 @@ import '../styles/global.css';
                 </div>
 
                 <!-- Implementation & Deployment -->
-                <div class="card-hover service-tier featured p-8 rounded-2xl scroll-reveal">
+                <div class="card-hover service-tier featured relative p-8 rounded-2xl scroll-reveal">
                     <div class="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
                         Most Popular
                     </div>
@@ -430,283 +305,6 @@ import '../styles/global.css';
         </div>
     </section>
 
-    <!-- Implementation Timeline -->
-    <section class="py-20 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                    Implementation Process
-                </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    Our proven methodology ensures successful AI deployment with minimal risk and maximum ROI.
-                </p>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <div class="timeline-item mb-12 scroll-reveal">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-white font-bold">1</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-2">Discovery & Assessment</h3>
-                            <p class="text-gray-400 mb-4">
-                                Comprehensive analysis of your current infrastructure, business requirements, and AI readiness. 
-                                We identify opportunities and create a detailed implementation roadmap.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm">Infrastructure Audit</span>
-                                <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm">Requirements Gathering</span>
-                                <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm">ROI Analysis</span>
-                            </div>
-                        </div>
-                        <div class="text-right text-gray-400 text-sm ml-4">
-                            Week 1-2
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item mb-12 scroll-reveal">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-white font-bold">2</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-2">Architecture Design</h3>
-                            <p class="text-gray-400 mb-4">
-                                Custom AI architecture design optimized for your specific use cases, performance requirements, 
-                                and compliance needs. Includes detailed technical specifications and deployment plans.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-sm">System Design</span>
-                                <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-sm">Security Planning</span>
-                                <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-sm">Integration Strategy</span>
-                            </div>
-                        </div>
-                        <div class="text-right text-gray-400 text-sm ml-4">
-                            Week 3-4
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item mb-12 scroll-reveal">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-white font-bold">3</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-2">Implementation & Testing</h3>
-                            <p class="text-gray-400 mb-4">
-                                Agile implementation with iterative testing and validation. We ensure all components work 
-                                seamlessly together and meet performance benchmarks.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-teal-600/20 text-teal-400 px-3 py-1 rounded-full text-sm">Development</span>
-                                <span class="bg-teal-600/20 text-teal-400 px-3 py-1 rounded-full text-sm">Integration Testing</span>
-                                <span class="bg-teal-600/20 text-teal-400 px-3 py-1 rounded-full text-sm">Performance Tuning</span>
-                            </div>
-                        </div>
-                        <div class="text-right text-gray-400 text-sm ml-4">
-                            Week 5-10
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item mb-12 scroll-reveal">
-                    <div class="flex items-start">
-                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-white font-bold">4</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-2">Deployment & Optimization</h3>
-                            <p class="text-gray-400 mb-4">
-                                Production deployment with comprehensive monitoring, performance optimization, and 
-                                continuous improvement processes to maximize system effectiveness.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-sm">Production Deploy</span>
-                                <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-sm">Monitoring Setup</span>
-                                <span class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-sm">Team Training</span>
-                            </div>
-                        </div>
-                        <div class="text-right text-gray-400 text-sm ml-4">
-                            Week 11-12
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support Tiers -->
-    <section class="py-20 px-6 bg-gray-900/30">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                    Support & Maintenance
-                </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    Choose the support level that matches your operational requirements and business criticality.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Standard Support -->
-                <div class="card-hover service-tier p-8 rounded-2xl scroll-reveal">
-                    <h3 class="text-2xl font-bold text-white mb-4">Standard Support</h3>
-                    <div class="text-4xl font-bold text-blue-400 mb-2">$2,500<span class="text-lg text-gray-400">/month</span></div>
-                    <p class="text-gray-400 mb-6">Essential support for non-critical systems</p>
-                    
-                    <div class="space-y-3 mb-8">
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Business hours support
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            48-hour response time
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Monthly system updates
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Email support channel
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Knowledge base access
-                        </div>
-                    </div>
-                    
-                    <button class="w-full bg-blue-600/20 border border-blue-500/30 text-blue-400 py-3 rounded-lg hover:bg-blue-600/30 transition-all">
-                        Choose Standard
-                    </button>
-                </div>
-
-                <!-- Premium Support -->
-                <div class="card-hover service-tier featured p-8 rounded-2xl scroll-reveal">
-                    <div class="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                        Recommended
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Premium Support</h3>
-                    <div class="text-4xl font-bold text-purple-400 mb-2">$5,000<span class="text-lg text-gray-400">/month</span></div>
-                    <p class="text-gray-400 mb-6">Comprehensive support for business-critical systems</p>
-                    
-                    <div class="space-y-3 mb-8">
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            24/7 support coverage
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            4-hour response time
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Weekly system updates
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Phone & email support
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Dedicated support engineer
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Proactive monitoring
-                        </div>
-                    </div>
-                    
-                    <button class="w-full bg-purple-600/20 border border-purple-500/30 text-purple-400 py-3 rounded-lg hover:bg-purple-600/30 transition-all">
-                        Choose Premium
-                    </button>
-                </div>
-
-                <!-- Enterprise Support -->
-                <div class="card-hover service-tier p-8 rounded-2xl scroll-reveal">
-                    <h3 class="text-2xl font-bold text-white mb-4">Enterprise Support</h3>
-                    <div class="text-4xl font-bold text-teal-400 mb-2">Custom</div>
-                    <p class="text-gray-400 mb-6">Tailored support for mission-critical deployments</p>
-                    
-                    <div class="space-y-3 mb-8">
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Custom SLA agreements
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            1-hour response time
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Daily system updates
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Multiple support channels
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Dedicated support team
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            On-site support available
-                        </div>
-                        <div class="flex items-center text-gray-300">
-                            <svg class="w-5 h-5 text-teal-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Custom integrations
-                        </div>
-                    </div>
-                    
-                    <button class="w-full bg-teal-600/20 border border-teal-500/30 text-teal-400 py-3 rounded-lg hover:bg-teal-600/30 transition-all">
-                        Contact Sales
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Call to Action -->
     <section class="py-20 px-6 bg-gradient-to-r from-blue-600/10 to-purple-600/10">
         <div class="max-w-4xl mx-auto text-center scroll-reveal">
@@ -714,7 +312,7 @@ import '../styles/global.css';
                 Ready to Start Your AI Journey?
             </h2>
             <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Get expert guidance from our AI specialists. Schedule a consultation to discuss your specific requirements 
+                Get expert guidance from our AI specialists. Schedule a consultation to discuss your specific requirements
                 and create a tailored implementation plan.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -728,18 +326,49 @@ import '../styles/global.css';
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 px-6 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="flex items-center justify-center space-x-2 mb-4">
-                <img src="/images/moxin.png" alt="Moxin-Org" class="w-6 h-6">
-                <span class="text-white font-semibold">Moxin-Org</span>
-            </div>
-            <p class="text-gray-400 text-sm">
-                © 2024 Moxin-Org. Open-source enterprise AI platform. Built for the future.
-            </p>
-        </div>
-    </footer>
+    <style>
+        :root {
+            --primary-navy: #1a1d29;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .service-tier {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .service-tier.featured {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+            border-color: var(--accent-blue);
+            transform: scale(1.05);
+        }
+
+        .deployment-option {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .deployment-option.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+            border-color: var(--accent-blue);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
 
     <script>
         // Initialize page
@@ -796,15 +425,17 @@ import '../styles/global.css';
                     const selectedArch = document.getElementById(`${deploymentType}-arch`);
                     if (selectedArch) {
                         selectedArch.classList.remove('hidden');
-                        
+
                         // Animate architecture appearance
-                        anime({
-                            targets: selectedArch,
-                            opacity: [0, 1],
-                            translateY: [20, 0],
-                            duration: 500,
-                            easing: 'easeOutCubic'
-                        });
+                        if (typeof anime !== 'undefined') {
+                            anime({
+                                targets: selectedArch,
+                                opacity: [0, 1],
+                                translateY: [20, 0],
+                                duration: 500,
+                                easing: 'easeOutCubic'
+                            });
+                        }
                     }
                 });
             });
@@ -815,23 +446,27 @@ import '../styles/global.css';
             // Card hover effects
             document.querySelectorAll('.card-hover').forEach(card => {
                 card.addEventListener('mouseenter', () => {
-                    anime({
-                        targets: card,
-                        scale: card.classList.contains('featured') ? 1.05 : 1.02,
-                        translateY: -4,
-                        duration: 300,
-                        easing: 'easeOutCubic'
-                    });
+                    if (typeof anime !== 'undefined') {
+                        anime({
+                            targets: card,
+                            scale: card.classList.contains('featured') ? 1.05 : 1.02,
+                            translateY: -4,
+                            duration: 300,
+                            easing: 'easeOutCubic'
+                        });
+                    }
                 });
 
                 card.addEventListener('mouseleave', () => {
-                    anime({
-                        targets: card,
-                        scale: card.classList.contains('featured') ? 1.05 : 1,
-                        translateY: 0,
-                        duration: 300,
-                        easing: 'easeOutCubic'
-                    });
+                    if (typeof anime !== 'undefined') {
+                        anime({
+                            targets: card,
+                            scale: card.classList.contains('featured') ? 1.05 : 1,
+                            translateY: 0,
+                            duration: 300,
+                            easing: 'easeOutCubic'
+                        });
+                    }
                 });
             });
 
@@ -839,20 +474,20 @@ import '../styles/global.css';
             document.querySelectorAll('button').forEach(button => {
                 button.addEventListener('click', (e) => {
                     const buttonText = e.target.textContent.trim();
-                    
+
                     // Animate button click
-                    anime({
-                        targets: e.target,
-                        scale: [1, 0.95, 1],
-                        duration: 200,
-                        easing: 'easeOutCubic'
-                    });
+                    if (typeof anime !== 'undefined') {
+                        anime({
+                            targets: e.target,
+                            scale: [1, 0.95, 1],
+                            duration: 200,
+                            easing: 'easeOutCubic'
+                        });
+                    }
 
                     // Handle different button actions
                     if (buttonText.includes('Consultation')) {
                         showDemoModal();
-                    } else if (buttonText.includes('Choose') || buttonText.includes('Contact')) {
-                        showComingSoon(buttonText);
                     } else if (buttonText.includes('Guide')) {
                         downloadServiceGuide();
                     }
@@ -860,47 +495,7 @@ import '../styles/global.css';
             });
         }
 
-        // Show coming soon message
-        function showComingSoon(feature) {
-            const notification = document.createElement('div');
-            notification.className = 'fixed top-4 right-4 bg-blue-600 text-white px-6 py-3 rounded-lg z-50';
-            notification.textContent = `${feature} - Coming Soon!`;
-            document.body.appendChild(notification);
-
-            setTimeout(() => {
-                document.body.removeChild(notification);
-            }, 3000);
-
-            anime({
-                targets: notification,
-                translateX: [300, 0],
-                opacity: [0, 1],
-                duration: 300,
-                easing: 'easeOutCubic'
-            });
-        }
-
-        // Download service guide
-        function downloadServiceGuide() {
-            const notification = document.createElement('div');
-            notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg z-50';
-            notification.textContent = 'Service guide download will be available soon!';
-            document.body.appendChild(notification);
-
-            setTimeout(() => {
-                document.body.removeChild(notification);
-            }, 3000);
-
-            anime({
-                targets: notification,
-                translateX: [300, 0],
-                opacity: [0, 1],
-                duration: 300,
-                easing: 'easeOutCubic'
-            });
-        }
-
-        // Demo modal (reuse from main.js)
+        // Demo modal
         function showDemoModal() {
             const modal = document.createElement('div');
             modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4';
@@ -945,17 +540,37 @@ import '../styles/global.css';
                 }
             });
 
-            anime({
-                targets: modal.querySelector('div'),
-                scale: [0.8, 1],
-                opacity: [0, 1],
-                duration: 300,
-                easing: 'easeOutCubic'
-            });
+            if (typeof anime !== 'undefined') {
+                anime({
+                    targets: modal.querySelector('div'),
+                    scale: [0.8, 1],
+                    opacity: [0, 1],
+                    duration: 300,
+                    easing: 'easeOutCubic'
+                });
+            }
+        }
+
+        // Download service guide
+        function downloadServiceGuide() {
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg z-50';
+            notification.textContent = 'Service guide download will be available soon!';
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                document.body.removeChild(notification);
+            }, 3000);
+
+            if (typeof anime !== 'undefined') {
+                anime({
+                    targets: notification,
+                    translateX: [300, 0],
+                    opacity: [0, 1],
+                    duration: 300,
+                    easing: 'easeOutCubic'
+                });
+            }
         }
     </script>
-
-</script>
-    <script src="../../architecture-charts.js"></script>
-</body>
-</html>
+</Layout>

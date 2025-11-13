@@ -2,6 +2,7 @@
 // Components
 import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
 
 export interface Props {
   title: string;
@@ -19,9 +20,11 @@ const { title, description } = Astro.props;
 
   <body class="font-inter bg-gradient-to-br from-primary-navy via-slate-800 to-slate-900 min-h-screen overflow-x-hidden text-white">
     <Header />
-    <main>
-      <slot />
-    </main>
+    <ErrorBoundary client:load>
+      <main>
+        <slot />
+      </main>
+    </ErrorBoundary>
 
     <style is:inline>
       .gradient-text {
