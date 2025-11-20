@@ -1,0 +1,1 @@
+const n=document.getElementById("lang-switcher"),e=document.getElementById("lang-text");n&&e&&(window.location.pathname.startsWith("/zh")?e.innerText="中文":e.innerText="EN",n.addEventListener("click",()=>{const t=window.location.pathname;if(t.startsWith("/zh"))window.location.href=t.replace("/zh","")||"/";else{const i=t==="/"?"/zh/":`/zh${t}`;window.location.href=i}}));

@@ -1,284 +1,61 @@
 ---
-// Solutions page
-import Layout from "../layouts/Layout.astro";
-import '../styles/global.css';
-import ReactFlowArchitecture from '../components/ReactFlowArchitecture.jsx';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout
-  title="AI Solutions Platform - Moxin Intelligence"
-  description="Comprehensive enterprise AI solutions from edge inference to datacenter-scale deployment."
->
-    <!-- Hero Section -->
-    <section class="pt-24 pb-16 px-6 tech-grid">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
-                AI Solutions
-                <span class="gradient-text">Platform</span>
-            </h1>
-            <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-                Comprehensive enterprise AI solutions from edge inference to datacenter-scale deployment.
-                Built for performance, security, and scalability.
-            </p>
+<Layout title="Enterprise Solutions - Moxin AI">
+  <div class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-20 animate-fade-in">
+      <h1 class="text-5xl font-bold mb-6 text-text-primary">Your AI, Your Infrastructure</h1>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto font-light">
+        Deploy the full Moxin stack on your own servers. Total privacy, zero data egress, and enterprise-grade security.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 mb-24">
+      <div class="bg-white border border-gray-200 rounded-3xl p-10 shadow-xl">
+        <h2 class="text-3xl font-bold mb-6 text-text-primary">Private Deployment</h2>
+        <p class="text-text-secondary mb-8 leading-relaxed">
+          We deploy the entire ecosystem (KTransformers, MoFa, Moly) on your private cloud or on-premise hardware.
+        </p>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-center gap-3 text-text-primary">
+            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xs">✓</div>
+            <span>Air-gapped installation available</span>
+          </li>
+          <li class="flex items-center gap-3 text-text-primary">
+            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xs">✓</div>
+            <span>SSO & RBAC Integration</span>
+          </li>
+          <li class="flex items-center gap-3 text-text-primary">
+            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xs">✓</div>
+            <span>Custom SLA & Support</span>
+          </li>
+        </ul>
+        <button class="w-full bg-text-primary text-white font-bold py-4 rounded-full hover:bg-black transition-colors shadow-lg shadow-black/20">
+          Contact Sales
+        </button>
+      </div>
+
+      <div class="space-y-8">
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-bold mb-4 text-text-primary">Custom Voice Cloning</h3>
+          <p class="text-text-secondary leading-relaxed">
+            Clone your executive's voice or create a unique brand voice using our SFT (Supervised Fine-Tuning) pipeline.
+          </p>
         </div>
-    </section>
-
-    <!-- KTransformers Section -->
-    <section class="py-32 px-6 bg-gradient-to-b from-gray-900/50 to-transparent">
-        <div class="max-w-7xl mx-auto space-y-16">
-            <!-- Full Width Chart -->
-            <div class="scroll-reveal">
-                <ReactFlowArchitecture client:load chartType="ktransformers" />
-            </div>
-
-            <!-- Content Below Chart -->
-            <div class="scroll-reveal">
-                <div class="flex items-center mb-8">
-                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mr-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h2 class="text-4xl font-bold text-white mb-2">KTransformers</h2>
-                        <p class="text-xl text-blue-400">High-Performance Inference Engine</p>
-                    </div>
-                </div>
-
-                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-                    KTransformers delivers cutting-edge inference performance with support for the latest AI models.
-                    Optimized for both datacenter and edge deployments with advanced quantization and memory management.
-                </p>
-
-                <div class="grid grid-cols-2 gap-6 mb-8">
-                    <div class="bg-gray-800/50 p-4 rounded-xl">
-                        <div class="text-3xl font-bold text-blue-400 mb-1">227.85</div>
-                        <div class="text-sm text-gray-400">tokens/s throughput</div>
-                    </div>
-                    <div class="bg-gray-800/50 p-4 rounded-xl">
-                        <div class="text-3xl font-bold text-green-400 mb-1">30x</div>
-                        <div class="text-sm text-gray-400">prefill speedup</div>
-                    </div>
-                    <div class="bg-gray-800/50 p-4 rounded-xl">
-                        <div class="text-3xl font-bold text-purple-400 mb-1">3x</div>
-                        <div class="text-sm text-gray-400">generation speed</div>
-                    </div>
-                    <div class="bg-gray-800/50 p-4 rounded-xl">
-                        <div class="text-3xl font-bold text-orange-400 mb-1">INT8/INT4</div>
-                        <div class="text-sm text-gray-400">quantization</div>
-                    </div>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <svg class="w-5 h-5 text-blue-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <div class="text-gray-300">
-                            <strong class="text-white">DeepSeek, Kimi, Qwen Support</strong> - Latest state-of-the-art models
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <svg class="w-5 h-5 text-blue-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <div class="text-gray-300">
-                            <strong class="text-white">Multi-Hardware Support</strong> - CPU, GPU, and specialized AI accelerators
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <svg class="w-5 h-5 text-blue-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <div class="text-gray-300">
-                            <strong class="text-white">Memory Optimization</strong> - Intelligent caching and memory management
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-bold mb-4 text-text-primary">Industry-Specific Agents</h3>
+          <p class="text-text-secondary leading-relaxed">
+            Pre-configured agent swarms for Coding, Customer Support, and Legal Analysis.
+          </p>
         </div>
-    </section>
-
-    <!-- Moxin AI Section -->
-    <section class="py-32 px-6 bg-gradient-to-b from-gray-900/30 to-transparent">
-        <div class="max-w-7xl mx-auto space-y-16">
-            <!-- Full Width Chart -->
-            <div class="scroll-reveal">
-                <ReactFlowArchitecture client:load chartType="system" />
-            </div>
-
-            <!-- Content Below Chart -->
-            <div class="scroll-reveal">
-                <div class="flex items-center mb-8">
-                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mr-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h2 class="text-4xl font-bold text-white mb-2">Moxin AI</h2>
-                        <p class="text-xl text-purple-400">Enterprise AI Platform</p>
-                    </div>
-                </div>
-
-                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-                        Complete AI application framework from frontend to inference. MolyKit provides cross-platform
-                        development tools, Moly Proxy ensures security and privacy, and Moly Server delivers OpenAI-compatible APIs.
-                    </p>
-
-                    <div class="space-y-6 mb-8">
-                        <div class="bg-gray-800/50 p-6 rounded-xl border-l-4 border-purple-500">
-                            <h3 class="text-lg font-semibold text-purple-400 mb-2">MolyKit Application Framework</h3>
-                            <p class="text-gray-300 text-sm">Cross-platform apps with minimal binary size and instant startup. Desktop, mobile, and web support.</p>
-                        </div>
-                        <div class="bg-gray-800/50 p-6 rounded-xl border-l-4 border-orange-500">
-                            <h3 class="text-lg font-semibold text-orange-400 mb-2">Moly Proxy & Middleware</h3>
-                            <p class="text-gray-300 text-sm">Privacy management, SSO authentication, prompt injection prevention, and secure MPC connectors.</p>
-                        </div>
-                        <div class="bg-gray-800/50 p-6 rounded-xl border-l-4 border-green-500">
-                            <h3 class="text-lg font-semibold text-green-400 mb-2">Moly Server</h3>
-                            <p class="text-gray-300 text-sm">OpenAI-compatible API with chat completion, real-time WebSocket communication, and comprehensive SDKs.</p>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-3 gap-4 text-center">
-                        <div class="bg-gray-800/30 p-4 rounded-lg">
-                            <div class="text-2xl font-bold text-purple-400 mb-1">25MB</div>
-                            <div class="text-xs text-gray-400">app size</div>
-                        </div>
-                        <div class="bg-gray-800/30 p-4 rounded-lg">
-                            <div class="text-2xl font-bold text-green-400 mb-1">0.8s</div>
-                            <div class="text-xs text-gray-400">startup time</div>
-                        </div>
-                        <div class="bg-gray-800/30 p-4 rounded-lg">
-                            <div class="text-2xl font-bold text-blue-400 mb-1">100%</div>
-                            <div class="text-xs text-gray-400">compatible</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-bold mb-4 text-text-primary">Hardware Consultation</h3>
+          <p class="text-text-secondary leading-relaxed">
+            Expert advice on building the most cost-effective inference clusters using consumer GPUs.
+          </p>
         </div>
-    </section>
-
-    <!-- MoFA Framework Section -->
-    <section class="py-32 px-6 bg-gradient-to-b from-gray-900/50 to-transparent">
-        <div class="max-w-7xl mx-auto space-y-16">
-            <!-- Full Width Chart -->
-            <div class="scroll-reveal">
-                <ReactFlowArchitecture client:load chartType="mofa" />
-            </div>
-
-            <!-- Content Below Chart -->
-            <div class="scroll-reveal">
-                <div class="flex items-center mb-8">
-                        <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mr-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-4xl font-bold text-white mb-2">MoFA Framework</h2>
-                            <p class="text-xl text-red-400">Multi-Agent Framework</p>
-                        </div>
-                    </div>
-
-                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-                        MoFA (Multi-Agent Framework) enables complex AI agent orchestration with dataflow architecture.
-                        From simple agents to hierarchical meta-agents, built for enterprise-scale deployment and hot-swapping.
-                    </p>
-
-                    <div class="grid grid-cols-2 gap-6 mb-8">
-                        <div class="bg-gray-800/50 p-4 rounded-xl">
-                            <div class="text-2xl font-bold text-red-400 mb-1">780</div>
-                            <div class="text-sm text-gray-400">concurrent requests</div>
-                        </div>
-                        <div class="bg-gray-800/50 p-4 rounded-xl">
-                            <div class="text-2xl font-bold text-orange-400 mb-1">220ms</div>
-                            <div class="text-sm text-gray-400">avg latency</div>
-                        </div>
-                        <div class="bg-gray-800/50 p-4 rounded-xl">
-                            <div class="text-2xl font-bold text-purple-400 mb-1">16+</div>
-                            <div class="text-sm text-gray-400">instances</div>
-                        </div>
-                        <div class="bg-gray-800/50 p-4 rounded-xl">
-                            <div class="text-2xl font-bold text-green-400 mb-1">0%</div>
-                            <div class="text-sm text-gray-400">downtime</div>
-                        </div>
-                    </div>
-
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <svg class="w-5 h-5 text-red-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <div class="text-gray-300">
-                                <strong class="text-white">Hierarchical Agent Composition</strong> - Simple, composite, super, and meta-agents
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-5 h-5 text-red-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <div class="text-gray-300">
-                                <strong class="text-white">Dataflow Architecture</strong> - Real-time streaming with zero-copy IPC
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-5 h-5 text-red-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <div class="text-gray-300">
-                                <strong class="text-white">Enterprise Features</strong> - OpenTelemetry, hot-swapping, cloud-native deployment
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 px-6 bg-gradient-to-r from-blue-600/10 to-purple-600/10">
-        <div class="max-w-4xl mx-auto text-center scroll-reveal">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                Ready to Transform Your AI Infrastructure?
-            </h2>
-            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Get started with our comprehensive AI platform and experience the power of enterprise-ready AI solutions.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105">
-                    Start Free Trial
-                </button>
-                <button class="border border-gray-600 text-gray-300 px-8 py-4 rounded-lg text-lg font-semibold hover:border-blue-500 hover:text-blue-400 transition-all">
-                    Schedule Demo
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Enhanced scroll reveal with intersection observer
-        document.addEventListener('DOMContentLoaded', function() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -100px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry, index) => {
-                    if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            entry.target.classList.add('revealed');
-                        }, index * 100); // Stagger animations
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.scroll-reveal').forEach(el => {
-                observer.observe(el);
-            });
-        });
-    </script>
+      </div>
+    </div>
+  </div>
 </Layout>
