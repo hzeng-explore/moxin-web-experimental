@@ -388,7 +388,7 @@ const SystemArchitectureFlow = () => {
       id: 'IE2',
       type: 'infrastructure',
       position: { x: 500, y: 1100 },
-      data: { label: 'Omnix Edge', description: 'Edge Optimized' },
+      data: { label: 'OminiX Edge', description: 'Edge Optimized' },
       sourcePosition: Position.Bottom,
       targetPosition: Position.Top,
     },

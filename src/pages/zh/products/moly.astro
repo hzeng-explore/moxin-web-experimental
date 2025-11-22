@@ -2,23 +2,22 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Moly - The Universal Client">
-<Layout title="Moly - The Universal Client">
+<Layout title="Moly - 通用客户端">
   <div class="pt-32 pb-20 px-6 max-w-7xl mx-auto text-center">
     <h1 class="text-5xl lg:text-7xl font-bold mb-8 text-text-primary animate-fade-in">
-      Your Cross-Platform <br />
+      您的跨平台 <br />
       <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-pink to-purple-500">
-        AI Companion
+        AI 伴侣
       </span>
     </h1>
     <p class="text-xl text-text-secondary max-w-2xl mx-auto mb-12 font-light">
-      A privacy-first, zero-setup interface for all your local LLMs. Available on macOS, Windows, and Linux.
+      一个隐私优先、零配置的界面，适用于您所有的本地 LLM。支持 macOS、Windows 和 Linux。
     </p>
 
     <div class="max-w-3xl mx-auto mb-12 animate-fade-in">
       <div class="bg-gradient-to-r from-accent-pink/10 to-purple-500/10 border border-accent-pink/20 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all cursor-pointer text-center transform hover:scale-105" onclick="window.open('https://moly-ai.ai', '_blank')">
-        <h3 class="text-2xl font-bold mb-3 text-text-primary">Visit Moly Website</h3>
-        <p class="text-text-secondary mb-4 text-lg">A privacy-first, zero-setup interface for all your local LLMs.</p>
+        <h3 class="text-2xl font-bold mb-3 text-text-primary">访问 Moly 网站</h3>
+        <p class="text-text-secondary mb-4 text-lg">一个隐私优先、零配置的界面，适用于您所有的本地 LLM。</p>
         <span class="text-accent-pink font-bold text-lg flex items-center justify-center gap-2">
           moly-ai.ai 
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
@@ -36,64 +35,63 @@ import Layout from '../../layouts/Layout.astro';
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left px-6 max-w-7xl mx-auto mb-24">
       <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-4 text-text-primary">Cross-Platform</h3>
+        <h3 class="text-xl font-bold mb-4 text-text-primary">跨平台</h3>
         <p class="text-text-secondary leading-relaxed">
-          Built with Rust and Makepad, Moly runs natively on macOS, Linux, and Windows. Experience seamless AI interaction across all your devices.
+          基于 Rust 和 Makepad 构建，Moly 在 macOS、Linux 和 Windows 上原生运行。在所有设备上体验无缝的 AI 交互。
         </p>
       </div>
       <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-4 text-text-primary">Local & Remote LLMs</h3>
+        <h3 class="text-xl font-bold mb-4 text-text-primary">本地与远程 LLM</h3>
         <p class="text-text-secondary leading-relaxed">
-          Connect to OpenAI, Anthropic, or run models locally with Moly Server. Choose from cutting-edge cloud models or run open-source models locally.
+          连接到 OpenAI、Anthropic，或使用 Moly Server 在本地运行模型。选择尖端的云模型或在本地运行开源模型。
         </p>
       </div>
       <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-4 text-text-primary">Lightning Fast</h3>
+        <h3 class="text-xl font-bold mb-4 text-text-primary">闪电般快速</h3>
         <p class="text-text-secondary leading-relaxed">
-          Built in Rust for maximum performance and memory safety. Experience instant responses, optimized memory usage, and native performance.
+          使用 Rust 构建，以实现最高性能和内存安全。体验即时响应、优化的内存使用和原生性能。
         </p>
       </div>
       <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-4 text-text-primary">Open Source</h3>
+        <h3 class="text-xl font-bold mb-4 text-text-primary">开源</h3>
         <p class="text-text-secondary leading-relaxed">
-          Fully open source with Apache 2.0 license. Join our community, contribute to the project, or build your own AI-powered applications.
+          完全开源，采用 Apache 2.0 许可证。加入我们的社区，为项目做出贡献，或构建您自己的 AI 驱动的应用程序。
         </p>
       </div>
       <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-4 text-text-primary">Privacy-First</h3>
+        <h3 class="text-xl font-bold mb-4 text-text-primary">隐私优先</h3>
         <p class="text-text-secondary leading-relaxed">
-          Complete data sovereignty with local models. End-to-end encryption for cloud conversations. Your conversations stay private.
+          通过本地模型实现完全的数据主权。云对话的端到端加密。您的对话保持私密。
         </p>
       </div>
       <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-xl font-bold mb-4 text-text-primary">AI Agent Integration</h3>
+        <h3 class="text-xl font-bold mb-4 text-text-primary">AI 代理集成</h3>
         <p class="text-text-secondary leading-relaxed">
-          Connect to MoFa servers to interact with AI agents. Deploy custom AI agents and create automated workflows.
+          连接到 MoFa 服务器以与 AI 代理交互。部署自定义 AI 代理并创建自动化工作流。
         </p>
       </div>
     </div>
 
     <!-- FAQ Section -->
     <div class="max-w-4xl mx-auto px-6 mb-24">
-      <h2 class="text-3xl font-bold text-center mb-12 text-text-primary">Frequently Asked Questions</h2>
+      <h2 class="text-3xl font-bold text-center mb-12 text-text-primary">常见问题</h2>
       <div class="space-y-6">
         <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <h3 class="text-lg font-bold mb-2 text-text-primary">What platforms does Moly App support?</h3>
-          <p class="text-text-secondary">Moly App runs natively on macOS, Linux, and Windows. It also works in web browsers and has experimental support for Android and iOS.</p>
+          <h3 class="text-lg font-bold mb-2 text-text-primary">Moly App 支持哪些平台？</h3>
+          <p class="text-text-secondary">Moly App 在 macOS、Linux 和 Windows 上原生运行。它也可以在 Web 浏览器中运行，并对 Android 和 iOS 有实验性支持。</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <h3 class="text-lg font-bold mb-2 text-text-primary">Can I use Moly App with local models for privacy?</h3>
-          <p class="text-text-secondary">Absolutely! Moly App supports local model execution through Moly Server. You can run open-source models like Llama and Mistral entirely on your machine.</p>
+          <h3 class="text-lg font-bold mb-2 text-text-primary">我可以为了隐私使用本地模型的 Moly App 吗？</h3>
+          <p class="text-text-secondary">当然！Moly App 通过 Moly Server 支持本地模型执行。您可以完全在您的机器上运行像 Llama 和 Mistral 这样的开源模型。</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <h3 class="text-lg font-bold mb-2 text-text-primary">Is Moly App really free and open source?</h3>
-          <p class="text-text-secondary">Yes, Moly App is completely free and licensed under Apache 2.0. You can use it for personal and commercial purposes without hidden costs.</p>
+          <h3 class="text-lg font-bold mb-2 text-text-primary">Moly App 真的是免费和开源的吗？</h3>
+          <p class="text-text-secondary">是的，Moly App 完全免费，并根据 Apache 2.0 许可。您可以将其用于个人和商业目的，而无需隐藏费用。</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <h3 class="text-lg font-bold mb-2 text-text-primary">How do I add my own AI provider to Moly?</h3>
-          <p class="text-text-secondary">Moly supports any OpenAI-compatible API. You can add custom providers through the Providers Dashboard or contribute new providers to the project.</p>
+          <h3 class="text-lg font-bold mb-2 text-text-primary">如何将我自己的 AI 提供商添加到 Moly？</h3>
+          <p class="text-text-secondary">Moly 支持任何与 OpenAI 兼容的 API。您可以通过提供商仪表板添加自定义提供商，或为项目贡献新的提供商。</p>
         </div>
       </div>
     </div>
-  </div>
 </Layout>

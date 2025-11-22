@@ -84,7 +84,7 @@ graph TB
     subgraph "推理引擎"
         direction TB
         IE1[KTransformers]
-        IE2[Omnix Edge]
+        IE2[OminiX Edge]
     end
 
     subgraph "硬件平台"
@@ -218,7 +218,7 @@ graph LR
 - **多租户服务**：支持8路并行生成的并发请求处理
 - **行业解决方案**：媒体、安全、金融等需要大模型能力的应用
 
-### 1.2 Omnix引擎上的边缘模型
+### 1.2 OminiX引擎上的边缘模型
 
 ```mermaid
 graph TB
@@ -230,7 +230,7 @@ graph TB
         VC[语音克隆少样本适应]
     end
 
-    subgraph "Omnix Edge优化"
+    subgraph "OminiX Edge优化"
         OPT1[模型量化INT4/FP16]
         OPT2[协作压缩MoE部署]
         OPT3[硬件加速NPU/GPU/DSP]
@@ -1015,8 +1015,8 @@ graph TB
 | ---------------- | ------------- | ------------- | --------------- | ----- | -------------------- |
 | DeepSeek-R1 0528 | KTransformers | 8×L20 + Xeon  | 227.85 tokens/s | 50ms  | 1.3TB RAM            |
 | DeepSeek-V3 671B | KTransformers | 单GPU + CPU    | 40 tokens/s     | 100ms | 70GB GPU + 1.3TB RAM |
-| Moxin 7B         | Omnix Edge    | MacBook M3    | 120 tokens/s    | 20ms  | 16GB Unified         |
-| Moxin 1B         | Omnix Edge    | iPhone 15 Pro | 80 tokens/s     | 30ms  | 8GB On-Device        |
+| Moxin 7B         | OminiX Edge    | MacBook M3    | 120 tokens/s    | 20ms  | 16GB Unified         |
+| Moxin 1B         | OminiX Edge    | iPhone 15 Pro | 80 tokens/s     | 30ms  | 8GB On-Device        |
 
 ### 应用性能
 
@@ -1296,7 +1296,7 @@ graph TB
 | 特性        | Moxin-Org       | Llama.cpp   | Ollama   | LangChain | Hugging Face   |
 | --------- | --------------- | ----------- | -------- | --------- | -------------- |
 | **模型服务**  | ✅ KTransformers | ✅ llama.cpp | ✅ Ollama | ❌ 无       | ✅ 推理           |
-| **边缘推理**  | ✅ Moxin/Omnix   | ⚠️ 有限       | ✅ 是      | ❌ 无       | ⚠️ 部分          |
+| **边缘推理**  | ✅ Moxin/OminiX   | ⚠️ 有限       | ✅ 是      | ❌ 无       | ⚠️ 部分          |
 | **智能体框架** | ✅ MoFA          | ❌ 无         | ❌ 无      | ✅ 是       | ✅ Transformers |
 | **应用框架**  | ✅ MolyKit       | ❌ 无         | ❌ 无      | ⚠️ 部分     | ❌ 无            |
 | **API网关** | ✅ Moly Server   | ❌ 无         | ⚠️ 基础    | ❌ 无       | ⚠️ 部分          |
@@ -1413,7 +1413,7 @@ Moxin-Org平台建立在开源协作基础之上：
 - **增强MoFA IDE**：带调试的可视化智能体构建器
 - **MolyKit v2.0**：改进UI组件和性能
 - **KTransformers v2.0**：支持下一代模型架构
-- **Omnix Edge**：扩展硬件平台支持
+- **OminiX Edge**：扩展硬件平台支持
 
 ### 2025年第二季度
 

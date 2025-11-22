@@ -21,7 +21,7 @@ class ArchitectureCharts {
         if (!chartElement) return;
 
         const chart = echarts.init(chartElement);
-        
+
         const option = {
             backgroundColor: 'transparent',
             tooltip: {
@@ -45,277 +45,277 @@ class ArchitectureCharts {
                 },
                 data: [
                     // Application Layer
-                    { 
-                        name: 'End User Applications', 
-                        x: 0, y: 0, 
+                    {
+                        name: 'End User Applications',
+                        x: 0, y: 0,
                         symbolSize: 80,
                         itemStyle: { color: '#7f8c8d' },
                         category: 0
                     },
-                    { 
-                        name: 'Desktop Apps', 
-                        x: -100, y: -50, 
+                    {
+                        name: 'Desktop Apps',
+                        x: -100, y: -50,
                         symbolSize: 60,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
-                    { 
-                        name: 'Mobile Apps', 
-                        x: -50, y: -50, 
+                    {
+                        name: 'Mobile Apps',
+                        x: -50, y: -50,
                         symbolSize: 60,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
-                    { 
-                        name: 'Web Applications', 
-                        x: 50, y: -50, 
+                    {
+                        name: 'Web Applications',
+                        x: 50, y: -50,
                         symbolSize: 60,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
-                    { 
-                        name: 'Enterprise Systems', 
-                        x: 100, y: -50, 
+                    {
+                        name: 'Enterprise Systems',
+                        x: 100, y: -50,
                         symbolSize: 60,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
 
                     // MolyKit Layer
-                    { 
-                        name: 'MolyKit Framework', 
-                        x: 0, y: 150, 
+                    {
+                        name: 'MolyKit Framework',
+                        x: 0, y: 150,
                         symbolSize: 80,
                         itemStyle: { color: '#f39c12' },
                         category: 2
                     },
-                    { 
-                        name: 'API Crates', 
-                        x: -80, y: 120, 
+                    {
+                        name: 'API Crates',
+                        x: -80, y: 120,
                         symbolSize: 50,
                         itemStyle: { color: '#e67e22' },
                         category: 3
                     },
-                    { 
-                        name: 'Client Crates', 
-                        x: -40, y: 120, 
+                    {
+                        name: 'Client Crates',
+                        x: -40, y: 120,
                         symbolSize: 50,
                         itemStyle: { color: '#e67e22' },
                         category: 3
                     },
-                    { 
-                        name: 'UI Components', 
-                        x: 0, y: 120, 
+                    {
+                        name: 'UI Components',
+                        x: 0, y: 120,
                         symbolSize: 50,
                         itemStyle: { color: '#e67e22' },
                         category: 3
                     },
-                    { 
-                        name: 'MPC Crates', 
-                        x: 40, y: 120, 
+                    {
+                        name: 'MPC Crates',
+                        x: 40, y: 120,
                         symbolSize: 50,
                         itemStyle: { color: '#e67e22' },
                         category: 3
                     },
 
                     // Middleware Layer
-                    { 
-                        name: 'Moly Proxy', 
-                        x: 0, y: 300, 
+                    {
+                        name: 'Moly Proxy',
+                        x: 0, y: 300,
                         symbolSize: 80,
                         itemStyle: { color: '#d35400' },
                         category: 4
                     },
-                    { 
-                        name: 'Configuration', 
-                        x: -60, y: 270, 
+                    {
+                        name: 'Configuration',
+                        x: -60, y: 270,
                         symbolSize: 50,
                         itemStyle: { color: '#e67e22' },
                         category: 5
                     },
-                    { 
-                        name: 'SSO Auth', 
-                        x: -20, y: 270, 
+                    {
+                        name: 'SSO Auth',
+                        x: -20, y: 270,
                         symbolSize: 50,
                         itemStyle: { color: '#e67e22' },
                         category: 5
                     },
-                    { 
-                        name: 'Security', 
-                        x: 20, y: 270, 
+                    {
+                        name: 'Security',
+                        x: 20, y: 270,
                         symbolSize: 50,
                         itemStyle: { color: '#e67e22' },
                         category: 5
                     },
 
                     // API Gateway
-                    { 
-                        name: 'Moly Server', 
-                        x: 0, y: 450, 
+                    {
+                        name: 'Moly Server',
+                        x: 0, y: 450,
                         symbolSize: 80,
                         itemStyle: { color: '#9b59b6' },
                         category: 6
                     },
-                    { 
-                        name: 'Chat API', 
-                        x: -60, y: 420, 
+                    {
+                        name: 'Chat API',
+                        x: -60, y: 420,
                         symbolSize: 50,
                         itemStyle: { color: '#8e44ad' },
                         category: 7
                     },
-                    { 
-                        name: 'Response API', 
-                        x: -20, y: 420, 
+                    {
+                        name: 'Response API',
+                        x: -20, y: 420,
                         symbolSize: 50,
                         itemStyle: { color: '#8e44ad' },
                         category: 7
                     },
-                    { 
-                        name: 'Assistant API', 
-                        x: 20, y: 420, 
+                    {
+                        name: 'Assistant API',
+                        x: 20, y: 420,
                         symbolSize: 50,
                         itemStyle: { color: '#8e44ad' },
                         category: 7
                     },
 
                     // Agent Framework
-                    { 
-                        name: 'MoFA Framework', 
-                        x: 0, y: 600, 
+                    {
+                        name: 'MoFA Framework',
+                        x: 0, y: 600,
                         symbolSize: 80,
                         itemStyle: { color: '#e74c3c' },
                         category: 8
                     },
-                    { 
-                        name: 'Dataflow Engine', 
-                        x: -80, y: 570, 
+                    {
+                        name: 'Dataflow Engine',
+                        x: -80, y: 570,
                         symbolSize: 50,
                         itemStyle: { color: '#c0392b' },
                         category: 9
                     },
-                    { 
-                        name: 'Multi-Agent', 
-                        x: -40, y: 570, 
+                    {
+                        name: 'Multi-Agent',
+                        x: -40, y: 570,
                         symbolSize: 50,
                         itemStyle: { color: '#c0392b' },
                         category: 9
                     },
-                    { 
-                        name: 'Stateless Arch', 
-                        x: 0, y: 570, 
+                    {
+                        name: 'Stateless Arch',
+                        x: 0, y: 570,
                         symbolSize: 50,
                         itemStyle: { color: '#c0392b' },
                         category: 9
                     },
 
                     // Inference Layer
-                    { 
-                        name: 'Inference Engines', 
-                        x: -200, y: 750, 
+                    {
+                        name: 'Inference Engines',
+                        x: -200, y: 750,
                         symbolSize: 80,
                         itemStyle: { color: '#3498db' },
                         category: 10
                     },
-                    { 
-                        name: 'KTransformers', 
-                        x: -250, y: 720, 
+                    {
+                        name: 'KTransformers',
+                        x: -250, y: 720,
                         symbolSize: 60,
                         itemStyle: { color: '#2980b9' },
                         category: 11
                     },
-                    { 
-                        name: 'Omnix Edge', 
-                        x: -150, y: 720, 
+                    {
+                        name: 'OminiX Edge',
+                        x: -150, y: 720,
                         symbolSize: 60,
                         itemStyle: { color: '#16a085' },
                         category: 11
                     },
 
                     // Models
-                    { 
-                        name: 'Foundation Models', 
-                        x: -300, y: 900, 
+                    {
+                        name: 'Foundation Models',
+                        x: -300, y: 900,
                         symbolSize: 80,
                         itemStyle: { color: '#2c3e50' },
                         category: 12
                     },
-                    { 
-                        name: 'DeepSeek V3', 
-                        x: -350, y: 870, 
+                    {
+                        name: 'DeepSeek V3',
+                        x: -350, y: 870,
                         symbolSize: 60,
                         itemStyle: { color: '#34495e' },
                         category: 13
                     },
-                    { 
-                        name: 'Kimi K2', 
-                        x: -300, y: 870, 
+                    {
+                        name: 'Kimi K2',
+                        x: -300, y: 870,
                         symbolSize: 60,
                         itemStyle: { color: '#34495e' },
                         category: 13
                     },
-                    { 
-                        name: 'Qwen Series', 
-                        x: -250, y: 870, 
+                    {
+                        name: 'Qwen Series',
+                        x: -250, y: 870,
                         symbolSize: 60,
                         itemStyle: { color: '#34495e' },
                         category: 13
                     },
 
                     // Edge Models
-                    { 
-                        name: 'Edge Models', 
-                        x: -100, y: 900, 
+                    {
+                        name: 'Edge Models',
+                        x: -100, y: 900,
                         symbolSize: 80,
                         itemStyle: { color: '#27ae60' },
                         category: 14
                     },
-                    { 
-                        name: 'Small Language Models', 
-                        x: -150, y: 870, 
+                    {
+                        name: 'Small Language Models',
+                        x: -150, y: 870,
                         symbolSize: 60,
                         itemStyle: { color: '#229954' },
                         category: 15
                     },
-                    { 
-                        name: 'Multi-Modal Models', 
-                        x: -100, y: 870, 
+                    {
+                        name: 'Multi-Modal Models',
+                        x: -100, y: 870,
                         symbolSize: 60,
                         itemStyle: { color: '#229954' },
                         category: 15
                     },
-                    { 
-                        name: 'TTS/ASR Models', 
-                        x: -50, y: 870, 
+                    {
+                        name: 'TTS/ASR Models',
+                        x: -50, y: 870,
                         symbolSize: 60,
                         itemStyle: { color: '#229954' },
                         category: 15
                     },
 
                     // Hardware
-                    { 
-                        name: 'Hardware Platforms', 
-                        x: 200, y: 750, 
+                    {
+                        name: 'Hardware Platforms',
+                        x: 200, y: 750,
                         symbolSize: 80,
                         itemStyle: { color: '#95a5a6' },
                         category: 16
                     },
-                    { 
-                        name: 'GPU Clusters', 
-                        x: 150, y: 720, 
+                    {
+                        name: 'GPU Clusters',
+                        x: 150, y: 720,
                         symbolSize: 60,
                         itemStyle: { color: '#7f8c8d' },
                         category: 17
                     },
-                    { 
-                        name: 'AI PCs', 
-                        x: 200, y: 720, 
+                    {
+                        name: 'AI PCs',
+                        x: 200, y: 720,
                         symbolSize: 60,
                         itemStyle: { color: '#7f8c8d' },
                         category: 17
                     },
-                    { 
-                        name: 'Edge Processors', 
-                        x: 250, y: 720, 
+                    {
+                        name: 'Edge Processors',
+                        x: 250, y: 720,
                         symbolSize: 60,
                         itemStyle: { color: '#7f8c8d' },
                         category: 17
@@ -327,7 +327,7 @@ class ArchitectureCharts {
                     { source: 'End User Applications', target: 'Mobile Apps' },
                     { source: 'End User Applications', target: 'Web Applications' },
                     { source: 'End User Applications', target: 'Enterprise Systems' },
-                    
+
                     // MolyKit connections
                     { source: 'Desktop Apps', target: 'MolyKit Framework' },
                     { source: 'Mobile Apps', target: 'MolyKit Framework' },
@@ -337,7 +337,7 @@ class ArchitectureCharts {
                     { source: 'MolyKit Framework', target: 'Client Crates' },
                     { source: 'MolyKit Framework', target: 'UI Components' },
                     { source: 'MolyKit Framework', target: 'MPC Crates' },
-                    
+
                     // Middleware connections
                     { source: 'API Crates', target: 'Moly Proxy' },
                     { source: 'Client Crates', target: 'Moly Proxy' },
@@ -345,7 +345,7 @@ class ArchitectureCharts {
                     { source: 'Moly Proxy', target: 'Configuration' },
                     { source: 'Moly Proxy', target: 'SSO Auth' },
                     { source: 'Moly Proxy', target: 'Security' },
-                    
+
                     // API Gateway connections
                     { source: 'Configuration', target: 'Moly Server' },
                     { source: 'SSO Auth', target: 'Moly Server' },
@@ -353,7 +353,7 @@ class ArchitectureCharts {
                     { source: 'Moly Server', target: 'Chat API' },
                     { source: 'Moly Server', target: 'Response API' },
                     { source: 'Moly Server', target: 'Assistant API' },
-                    
+
                     // Agent Framework connections
                     { source: 'Chat API', target: 'MoFA Framework' },
                     { source: 'Response API', target: 'MoFA Framework' },
@@ -361,27 +361,27 @@ class ArchitectureCharts {
                     { source: 'MoFA Framework', target: 'Dataflow Engine' },
                     { source: 'MoFA Framework', target: 'Multi-Agent' },
                     { source: 'MoFA Framework', target: 'Stateless Arch' },
-                    
+
                     // Inference connections
                     { source: 'Dataflow Engine', target: 'Inference Engines' },
                     { source: 'Multi-Agent', target: 'Inference Engines' },
                     { source: 'Stateless Arch', target: 'Inference Engines' },
                     { source: 'Inference Engines', target: 'KTransformers' },
-                    { source: 'Inference Engines', target: 'Omnix Edge' },
-                    
+                    { source: 'Inference Engines', target: 'OminiX Edge' },
+
                     // Model connections
                     { source: 'KTransformers', target: 'Foundation Models' },
-                    { source: 'Omnix Edge', target: 'Edge Models' },
+                    { source: 'OminiX Edge', target: 'Edge Models' },
                     { source: 'Foundation Models', target: 'DeepSeek V3' },
                     { source: 'Foundation Models', target: 'Kimi K2' },
                     { source: 'Foundation Models', target: 'Qwen Series' },
                     { source: 'Edge Models', target: 'Small Language Models' },
                     { source: 'Edge Models', target: 'Multi-Modal Models' },
                     { source: 'Edge Models', target: 'TTS/ASR Models' },
-                    
+
                     // Hardware connections
                     { source: 'KTransformers', target: 'Hardware Platforms' },
-                    { source: 'Omnix Edge', target: 'Hardware Platforms' },
+                    { source: 'OminiX Edge', target: 'Hardware Platforms' },
                     { source: 'Hardware Platforms', target: 'GPU Clusters' },
                     { source: 'Hardware Platforms', target: 'AI PCs' },
                     { source: 'Hardware Platforms', target: 'Edge Processors' }
@@ -446,7 +446,7 @@ class ArchitectureCharts {
         if (!chartElement) return;
 
         const chart = echarts.init(chartElement);
-        
+
         const option = {
             backgroundColor: 'transparent',
             textStyle: { color: '#94a3b8' },
@@ -486,7 +486,7 @@ class ArchitectureCharts {
                     name: 'Standard Inference',
                     type: 'bar',
                     data: [45, 12, 65, 35],
-                    itemStyle: { 
+                    itemStyle: {
                         color: '#64748b',
                         borderRadius: [4, 4, 0, 0]
                     }
@@ -495,7 +495,7 @@ class ArchitectureCharts {
                     name: 'KTransformers Optimization',
                     type: 'bar',
                     data: [227.85, 40, 180, 95],
-                    itemStyle: { 
+                    itemStyle: {
                         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                             { offset: 0, color: '#3b82f6' },
                             { offset: 1, color: '#1e40af' }
@@ -560,7 +560,7 @@ class ArchitectureCharts {
         if (!chartElement) return;
 
         const chart = echarts.init(chartElement);
-        
+
         const option = {
             backgroundColor: 'transparent',
             textStyle: { color: '#94a3b8' },
@@ -583,19 +583,19 @@ class ArchitectureCharts {
                     { name: 'TTS Models', value: 60 },
                     { name: 'ASR Models', value: 70 },
                     { name: 'Voice Cloning', value: 40 },
-                    
+
                     // Optimization layer
                     { name: 'Model Quantization', value: 120 },
                     { name: 'Collaborative Compression', value: 90 },
                     { name: 'Hardware Acceleration', value: 110 },
                     { name: 'Memory Optimization', value: 130 },
-                    
+
                     // Platform layer
                     { name: 'MacBook/AI PC', value: 100 },
                     { name: 'Embedded Edge', value: 80 },
                     { name: 'Mobile Devices', value: 90 },
                     { name: 'AI Appliances', value: 70 },
-                    
+
                     // Use cases
                     { name: 'Real-time Interpreter', value: 60 },
                     { name: 'Personal Assistant', value: 70 },
@@ -614,7 +614,7 @@ class ArchitectureCharts {
                     { source: 'ASR Models', target: 'Memory Optimization', value: 35 },
                     { source: 'Voice Cloning', target: 'Model Quantization', value: 20 },
                     { source: 'Voice Cloning', target: 'Collaborative Compression', value: 20 },
-                    
+
                     // Optimizations to Platforms
                     { source: 'Model Quantization', target: 'MacBook/AI PC', value: 40 },
                     { source: 'Model Quantization', target: 'Mobile Devices', value: 30 },
@@ -624,7 +624,7 @@ class ArchitectureCharts {
                     { source: 'Hardware Acceleration', target: 'Mobile Devices', value: 35 },
                     { source: 'Memory Optimization', target: 'Embedded Edge', value: 40 },
                     { source: 'Memory Optimization', target: 'AI Appliances', value: 30 },
-                    
+
                     // Platforms to Use Cases
                     { source: 'MacBook/AI PC', target: 'Real-time Interpreter', value: 30 },
                     { source: 'MacBook/AI PC', target: 'Personal Assistant', value: 35 },
@@ -636,7 +636,7 @@ class ArchitectureCharts {
                     { source: 'AI Appliances', target: 'Education Tools', value: 25 }
                 ],
                 itemStyle: {
-                    color: function(params) {
+                    color: function (params) {
                         const colors = ['#27ae60', '#16a085', '#2ecc71', '#1abc9c', '#3498db', '#2980b9', '#9b59b6', '#8e44ad'];
                         return colors[params.dataIndex % colors.length];
                     }
@@ -678,7 +678,7 @@ class ArchitectureCharts {
         if (!chartElement) return;
 
         const chart = echarts.init(chartElement);
-        
+
         const option = {
             backgroundColor: 'transparent',
             textStyle: { color: '#94a3b8' },
@@ -700,142 +700,142 @@ class ArchitectureCharts {
                 },
                 data: [
                     // Agent types
-                    { 
-                        name: 'Simple Agent', 
+                    {
+                        name: 'Simple Agent',
                         symbolSize: 70,
                         itemStyle: { color: '#e74c3c' },
                         category: 0
                     },
-                    { 
-                        name: 'Composite Agent', 
+                    {
+                        name: 'Composite Agent',
                         symbolSize: 80,
                         itemStyle: { color: '#e74c3c' },
                         category: 0
                     },
-                    { 
-                        name: 'Super Agent', 
+                    {
+                        name: 'Super Agent',
                         symbolSize: 90,
                         itemStyle: { color: '#e74c3c' },
                         category: 0
                     },
-                    { 
-                        name: 'Meta Agent', 
+                    {
+                        name: 'Meta Agent',
                         symbolSize: 100,
                         itemStyle: { color: '#e74c3c' },
                         category: 0
                     },
 
                     // Dataflow components
-                    { 
-                        name: 'Nodes', 
+                    {
+                        name: 'Nodes',
                         symbolSize: 60,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
-                    { 
-                        name: 'Edges', 
+                    {
+                        name: 'Edges',
                         symbolSize: 60,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
-                    { 
-                        name: 'Graphs', 
+                    {
+                        name: 'Graphs',
                         symbolSize: 80,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
-                    { 
-                        name: 'Shared Memory', 
+                    {
+                        name: 'Shared Memory',
                         symbolSize: 70,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
-                    { 
-                        name: 'TCP Communication', 
+                    {
+                        name: 'TCP Communication',
                         symbolSize: 70,
                         itemStyle: { color: '#3498db' },
                         category: 1
                     },
 
                     // Development tools
-                    { 
-                        name: 'YAML Config', 
+                    {
+                        name: 'YAML Config',
                         symbolSize: 60,
                         itemStyle: { color: '#16a085' },
                         category: 2
                     },
-                    { 
-                        name: 'Stage GUI', 
+                    {
+                        name: 'Stage GUI',
                         symbolSize: 70,
                         itemStyle: { color: '#16a085' },
                         category: 2
                     },
-                    { 
-                        name: 'Python SDK', 
+                    {
+                        name: 'Python SDK',
                         symbolSize: 80,
                         itemStyle: { color: '#16a085' },
                         category: 2
                     },
-                    { 
-                        name: 'Rust SDK', 
+                    {
+                        name: 'Rust SDK',
                         symbolSize: 70,
                         itemStyle: { color: '#16a085' },
                         category: 2
                     },
 
                     // Enterprise features
-                    { 
-                        name: 'Stateless Design', 
+                    {
+                        name: 'Stateless Design',
                         symbolSize: 80,
                         itemStyle: { color: '#9b59b6' },
                         category: 3
                     },
-                    { 
-                        name: 'OpenTelemetry', 
+                    {
+                        name: 'OpenTelemetry',
                         symbolSize: 70,
                         itemStyle: { color: '#9b59b6' },
                         category: 3
                     },
-                    { 
-                        name: 'Hot-Swap', 
+                    {
+                        name: 'Hot-Swap',
                         symbolSize: 70,
                         itemStyle: { color: '#9b59b6' },
                         category: 3
                     },
-                    { 
-                        name: 'Cloud Native', 
+                    {
+                        name: 'Cloud Native',
                         symbolSize: 80,
                         itemStyle: { color: '#9b59b6' },
                         category: 3
                     },
 
                     // Pre-built nodes
-                    { 
-                        name: 'LLM API Calls', 
+                    {
+                        name: 'LLM API Calls',
                         symbolSize: 70,
                         itemStyle: { color: '#f39c12' },
                         category: 4
                     },
-                    { 
-                        name: 'Tool Integration', 
+                    {
+                        name: 'Tool Integration',
                         symbolSize: 70,
                         itemStyle: { color: '#f39c12' },
                         category: 4
                     },
-                    { 
-                        name: 'Terminal I/O', 
+                    {
+                        name: 'Terminal I/O',
                         symbolSize: 60,
                         itemStyle: { color: '#f39c12' },
                         category: 4
                     },
-                    { 
-                        name: 'Data Processing', 
+                    {
+                        name: 'Data Processing',
                         symbolSize: 70,
                         itemStyle: { color: '#f39c12' },
                         category: 4
                     },
-                    { 
-                        name: 'CRM Integration', 
+                    {
+                        name: 'CRM Integration',
                         symbolSize: 70,
                         itemStyle: { color: '#f39c12' },
                         category: 4
@@ -847,7 +847,7 @@ class ArchitectureCharts {
                     { source: 'Composite Agent', target: 'Graphs' },
                     { source: 'Super Agent', target: 'Graphs' },
                     { source: 'Meta Agent', target: 'Graphs' },
-                    
+
                     // Dataflow connections
                     { source: 'Nodes', target: 'YAML Config' },
                     { source: 'Nodes', target: 'Python SDK' },
@@ -855,7 +855,7 @@ class ArchitectureCharts {
                     { source: 'Graphs', target: 'Stage GUI' },
                     { source: 'Shared Memory', target: 'Stateless Design' },
                     { source: 'TCP Communication', target: 'Stateless Design' },
-                    
+
                     // Enterprise features
                     { source: 'Stateless Design', target: 'LLM API Calls' },
                     { source: 'OpenTelemetry', target: 'Tool Integration' },
@@ -917,7 +917,7 @@ class ArchitectureCharts {
         if (!chartElement) return;
 
         const chart = echarts.init(chartElement);
-        
+
         const option = {
             backgroundColor: 'transparent',
             textStyle: { color: '#94a3b8' },
@@ -967,7 +967,7 @@ class ArchitectureCharts {
                     name: 'Request Rate',
                     type: 'bar',
                     data: [1000, 500, 200, 100],
-                    itemStyle: { 
+                    itemStyle: {
                         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                             { offset: 0, color: '#9b59b6' },
                             { offset: 1, color: '#8e44ad' }
@@ -1037,11 +1037,11 @@ class ArchitectureCharts {
 }
 
 // Initialize architecture charts when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Wait for ECharts to be available
     if (typeof echarts !== 'undefined') {
         window.architectureCharts = new ArchitectureCharts();
-        
+
         // Handle window resize
         window.addEventListener('resize', () => {
             if (window.architectureCharts) {

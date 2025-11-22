@@ -83,7 +83,7 @@ graph TB
     subgraph "Inference Engines"
         direction TB
         IE1[KTransformersDatacenter Optimized]
-        IE2[Omnix EdgeEdge Optimized]
+        IE2[OminiX EdgeEdge Optimized]
     end
 
     subgraph "Hardware Platforms"
@@ -217,7 +217,7 @@ graph LR
 - **Multi-Tenant Serving**: Concurrent request handling with 8-way parallel generation
 - **Industry Solutions**: Media, security, finance applications requiring large model capabilities
 
-### 1.2 Edge Models on Omnix Engine
+### 1.2 Edge Models on OminiX Engine
 
 ```mermaid
 graph TB
@@ -229,7 +229,7 @@ graph TB
         VC[Voice CloningFew-Shot Adaptation]
     end
 
-    subgraph "Omnix Edge Optimizations"
+    subgraph "OminiX Edge Optimizations"
         OPT1[Model QuantizationINT4/FP16]
         OPT2[Collaborative CompressionMoE Deployment]
         OPT3[Hardware AccelerationNPU/GPU/DSP]
@@ -978,8 +978,8 @@ graph TB
 |-------|-----------|----------|------------|---------|--------|
 | DeepSeek-R1 0528 | KTransformers | 8×L20 + Xeon | 227.85 tokens/s | 50ms | 1.3TB RAM |
 | DeepSeek-V3 671B | KTransformers | Single GPU + CPU | 40 tokens/s | 100ms | 70GB GPU + 1.3TB RAM |
-| Moxin 7B | Omnix Edge | MacBook M3 | 120 tokens/s | 20ms | 16GB Unified |
-| Moxin 1B | Omnix Edge | iPhone 15 Pro | 80 tokens/s | 30ms | 8GB On-Device |
+| Moxin 7B | OminiX Edge | MacBook M3 | 120 tokens/s | 20ms | 16GB Unified |
+| Moxin 1B | OminiX Edge | iPhone 15 Pro | 80 tokens/s | 30ms | 8GB On-Device |
 
 ### Application Performance
 
@@ -1245,7 +1245,7 @@ graph TB
 | Feature | Moxin-Org | Llama.cpp | Ollama | LangChain | Hugging Face |
 |---------|-----------|-----------|--------|-----------|--------------|
 | **Model Serving** | ✅ KTransformers | ✅ llama.cpp | ✅ Ollama | ❌ None | ✅ Inference |
-| **Edge Inference** | ✅ Moxin/Omnix | ⚠️ Limited | ✅ Yes | ❌ None | ⚠️ Partial |
+| **Edge Inference** | ✅ Moxin/OminiX | ⚠️ Limited | ✅ Yes | ❌ None | ⚠️ Partial |
 | **Agent Framework** | ✅ MoFA | ❌ None | ❌ None | ✅ Yes | ✅ Transformers |
 | **App Framework** | ✅ MolyKit | ❌ None | ❌ None | ⚠️ Partial | ❌ None |
 | **API Gateway** | ✅ Moly Server | ❌ None | ⚠️ Basic | ❌ None | ⚠️ Partial |
@@ -1360,7 +1360,7 @@ We welcome contributions from the community:
 - **Enhanced MoFA IDE**: Visual agent builder with debugging
 - **MolyKit v2.0**: Improved UI components and performance
 - **KTransformers v2.0**: Support for next-generation model architectures
-- **Omnix Edge**: Expanded hardware platform support
+- **OminiX Edge**: Expanded hardware platform support
 
 ### Q2 2025
 - **Enterprise Features**: Advanced RBAC and audit capabilities

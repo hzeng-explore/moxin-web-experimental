@@ -1,0 +1,62 @@
+---
+// Developers page
+import Layout from "../../layouts/Layout.astro";
+import '../../styles/global.css';
+---
+
+<Layout
+  title="开发者资源 - Moxin Intelligence"
+  description="全面的文档、API和工具，助您构建强大的AI应用。"
+>
+  <div class="pt-32 pb-10 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-10 animate-fade-in">
+      <h1 class="text-5xl font-bold mb-6 text-text-primary">
+        开发者资源
+      </h1>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto font-light">
+        全面的文档、API和工具，助您构建强大的AI应用。
+        从我们的开源平台开始，加入开发者社区。
+      </p>
+    </div>
+  </div>
+
+  <section class="py-10 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          敬请期待
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          我们正在努力为您带来全面的开发者资源、API和文档。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Documentation -->
+        <a href="#" class="group p-8 rounded-2xl bg-white border border-gray-200 hover:border-blue-500 transition-all duration-300 shadow-sm hover:shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mr-4 group-hover:bg-blue-100 transition-colors">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900">文档</h3>
+          </div>
+          <p class="text-gray-600">
+            详细的指南、API 参考和教程，帮助您集成 Moxin 技术。
+          </p>
+        </a>
+
+        <div class="text-center p-8 bg-gray-50 rounded-xl border border-gray-200">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">SDK 和库</h3>
+          <p class="text-gray-600">适用于 Python、JavaScript 等的官方 SDK</p>
+        </div>
+
+        <div class="text-center p-8 bg-gray-50 rounded-xl border border-gray-200">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">代码示例</h3>
+          <p class="text-gray-600">即用型示例和示例应用程序</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
