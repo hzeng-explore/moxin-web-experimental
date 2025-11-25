@@ -6,9 +6,9 @@ import Layout from '../../layouts/Layout.astro';
   <div class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
     <div class="text-center mb-16 animate-fade-in">
       <h1 class="text-5xl font-bold mb-6 text-text-primary">
-        The Brains of <br />
+        Moxin LM <br />
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-purple to-accent-pink">
-          The Operation
+          Open Source Foundation Models
         </span>
       </h1>
       <p class="text-xl text-text-secondary max-w-3xl mx-auto font-light">
@@ -160,46 +160,34 @@ import Layout from '../../layouts/Layout.astro';
       </div>
     </div>
 
-    <div class="mb-24">
-      <h2 class="text-3xl font-bold mb-12 text-center text-text-primary">The Moxin Personal AI Stack</h2>
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 text-center hover:shadow-md transition-shadow">
-          <div class="text-4xl mb-4">🧠</div>
-          <h3 class="font-bold mb-2">Moxin AI</h3>
-          <p class="text-sm text-text-secondary">The Core Model</p>
+    <!-- Technical Specs -->
+    <div class="max-w-4xl mx-auto mb-24">
+      <h2 class="text-3xl font-bold mb-12 text-center text-text-primary">Technical Specifications</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
+          <h3 class="text-xl font-bold mb-4 text-text-primary">Training Data</h3>
+          <p class="text-text-secondary leading-relaxed mb-4">
+            Trained on 3T tokens of high-quality code and reasoning data. 
+            Includes a diverse mix of programming languages, mathematical proofs, and logical reasoning tasks.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-text-secondary">Python</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-text-secondary">Rust</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-text-secondary">C++</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-text-secondary">Math</span>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 text-center hover:shadow-md transition-shadow">
-          <div class="text-4xl mb-4">🤖</div>
-          <h3 class="font-bold mb-2">MoFa</h3>
-          <p class="text-sm text-text-secondary">Intelligent Agent Framework</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 text-center hover:shadow-md transition-shadow">
-          <div class="text-4xl mb-4">💻</div>
-          <h3 class="font-bold mb-2">Moly</h3>
-          <p class="text-sm text-text-secondary">Rust LLM Client</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200 text-center hover:shadow-md transition-shadow">
-          <div class="text-4xl mb-4">⚡</div>
-          <h3 class="font-bold mb-2">OminiX</h3>
-          <p class="text-sm text-text-secondary">Edge Inference Engine</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl font-bold mb-8 text-center text-text-primary">Frequently Asked Questions</h2>
-      <div class="space-y-6">
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
-          <h3 class="font-bold mb-2 text-text-primary">What makes Moxin AI "truly open"?</h3>
-          <p class="text-text-secondary">Complete access to model weights, training data composition, and scripts for full reproducibility.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
-          <h3 class="font-bold mb-2 text-text-primary">How do I run Moxin AI on edge devices?</h3>
-          <p class="text-text-secondary">Use the OminiX inference engine, optimized for various hardware including NPUs.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
-          <h3 class="font-bold mb-2 text-text-primary">Where can I find models and resources?</h3>
-          <p class="text-text-secondary">Models on Hugging Face (moxin-org), code and docs on GitHub (moxin-org/Moxin-LLM).</p>
+        <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
+          <h3 class="text-xl font-bold mb-4 text-text-primary">Architecture</h3>
+          <p class="text-text-secondary leading-relaxed mb-4">
+            Based on Llama 3 architecture with custom modifications for improved reasoning capabilities.
+            Features Grouped Query Attention (GQA) for faster inference.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-text-secondary">GQA</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-text-secondary">RoPE</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-text-secondary">SwiGLU</span>
+          </div>
         </div>
       </div>
     </div>

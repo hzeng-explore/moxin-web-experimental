@@ -12,20 +12,20 @@ const initialNodes = [
     {
         id: 'agents',
         position: { x: 250, y: 100 },
-        data: { label: 'MoFa Agents' },
+        data: { label: 'MoFA Agents' },
         style: { background: '#30B0C7', color: 'white', border: 'none', borderRadius: '12px', width: 200, padding: '12px', fontWeight: '600', boxShadow: '0 4px 12px rgba(48, 176, 199, 0.3)' },
     },
     {
         id: 'models',
         position: { x: 250, y: 200 },
-        data: { label: 'Moxin Models (LLM/Voice)' },
+        data: { label: 'Moxin LM (LLM/Voice)' },
         style: { background: '#5E5CE6', color: 'white', border: 'none', borderRadius: '12px', width: 200, padding: '12px', fontWeight: '600', boxShadow: '0 4px 12px rgba(94, 92, 230, 0.3)' },
     },
     {
         id: 'compute',
         position: { x: 250, y: 300 },
-        data: { label: 'Inference (KTransformers)' },
-        style: { background: '#0071E3', color: 'white', border: 'none', borderRadius: '12px', width: 200, padding: '12px', fontWeight: '600', boxShadow: '0 4px 12px rgba(0, 113, 227, 0.3)' },
+        data: { label: 'Inference (OminiX)' },
+        style: { background: '#059669', color: 'white', border: 'none', borderRadius: '12px', width: 200, padding: '12px', fontWeight: '600', boxShadow: '0 4px 12px rgba(5, 150, 105, 0.3)' },
     },
 ];
 
@@ -41,7 +41,18 @@ export default function InteractiveStack() {
 
     return (
         <div style={{ height: '400px', width: '100%', background: '#F5F5F7', borderRadius: '20px', border: '1px solid #D2D2D7' }}>
-            <ReactFlow nodes={nodes} edges={edges} fitView attributionPosition="bottom-right">
+            <ReactFlow
+                nodes={nodes}
+                edges={edges}
+                fitView
+                attributionPosition="bottom-right"
+                panOnScroll={false}
+                zoomOnScroll={false}
+                zoomOnPinch={false}
+                zoomOnDoubleClick={false}
+                panOnDrag={false}
+                preventScrolling={false}
+            >
                 <Background color="#D2D2D7" gap={16} />
             </ReactFlow>
         </div>
