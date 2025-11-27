@@ -10,13 +10,13 @@ const navLinks = [
 ];
 
 const productsText = isZh ? '产品' : 'Products';
-const computeText = isZh ? '计算与推理' : 'Compute & Inference';
-const computeDesc = isZh ? 'OminiX & KTransformers' : 'OminiX & KTransformers';
-const modelsText = isZh ? '模型' : 'Models';
+const computeText = isZh ? '⚡ 计算与推理' : '⚡ Compute & Inference';
+const computeDesc = isZh ? 'OminiX Edge' : 'OminiX Edge';
+const modelsText = isZh ? '🧠 模型' : '🧠 Models';
 const modelsDesc = isZh ? 'Moxin LM & 语音' : 'Moxin LM & Voice';
-const agentsText = isZh ? '智能体' : 'Agents';
+const agentsText = isZh ? '🤖 智能体' : '🤖 Agents';
 const agentsDesc = isZh ? 'MoFA 框架' : 'MoFA Framework';
-const appText = isZh ? '应用' : 'Application';
+const appText = isZh ? '💻 应用' : '💻 Application';
 const appDesc = isZh ? 'Moly 客户端' : 'Moly Client';
 const deployText = isZh ? '部署' : 'Deploy';
 
@@ -38,11 +38,11 @@ const getLink = (path) => isZh ? `/zh${path}` : path;
         </button>
         <!-- Dropdown -->
         <div class="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left p-2">
-          <a href={getLink("/products/moly")} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
+          <a href={getLink("/products/applications")} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
             <div class="text-text-primary font-semibold text-sm">{appText}</div>
             <div class="text-xs text-text-secondary">{appDesc}</div>
           </a>
-          <a href={getLink("/products/mofa")} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
+          <a href={getLink("/products/agents")} class="block p-3 rounded-lg hover:bg-gray-50 transition-colors">
             <div class="text-text-primary font-semibold text-sm">{agentsText}</div>
             <div class="text-xs text-text-secondary">{agentsDesc}</div>
           </a>

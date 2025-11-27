@@ -21,22 +21,22 @@ import HeroBackground from '../components/HeroBackground.astro';
             </div>
             
             <h1 class="text-5xl font-bold tracking-tight leading-tight text-text-primary">
-              Advancing the <br />
+              Truly Open, <br />
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-blue to-accent-purple">
-                Open Source AI Ecosystem
+                Edge-First AI Ecosystem
               </span>
             </h1>
             
             <p class="text-xl text-text-secondary max-w-xl leading-relaxed font-light">
-              Pioneering the future of open, efficient, and sovereign AI through fundamental research and robust engineering. From Edge to Cloud, Chip to Agent.
+              We are building a version of the AI future that is open, efficient, and sovereign. From Edge to Cloud.
             </p>
 
             <div class="flex flex-wrap gap-4">
-              <a href="https://github.com/moxin-org" target="_blank" class="bg-text-primary hover:bg-black text-white px-8 py-4 rounded-full font-medium transition-all hover:scale-105 flex items-center gap-2">
+              <a href="https://github.com/moxin-org" target="_blank" class="bg-white text-text-primary border-4 border-black px-8 py-4 rounded-full font-medium transition-all hover:bg-black hover:text-white hover:scale-105 flex items-center gap-2">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
                 GitHub
               </a>
-              <a href="https://huggingface.co/moxin-org" target="_blank" class="bg-[#FFD21E] hover:bg-[#FFD21E]/90 text-black px-8 py-4 rounded-full font-medium transition-all hover:scale-105 flex items-center gap-2">
+              <a href="https://huggingface.co/moxin-org" target="_blank" class="bg-white text-text-primary border-4 border-[#FFD21E] px-8 py-4 rounded-full font-medium transition-all hover:bg-[#FFD21E] hover:scale-105 flex items-center gap-2">
                 <img src="/images/hf-logo.svg" class="w-6 h-6" alt="Hugging Face" />
                 Hugging Face
               </a>
@@ -48,6 +48,93 @@ import HeroBackground from '../components/HeroBackground.astro';
           <div class="relative animate-slide-up">
             <div class="relative bg-white border border-gray-200 rounded-3xl p-2 shadow-2xl">
               <InteractiveStack client:only="react" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moxin LM Section -->
+    <section class="py-24 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-16 items-center">
+          <div class="flex-1 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-accent-purple text-sm font-bold">
+              <span class="w-2 h-2 rounded-full bg-accent-purple"></span>
+              Core Technology
+            </div>
+            <h2 class="text-4xl font-bold text-text-primary">Moxin LM</h2>
+            <p class="text-xl text-text-secondary leading-relaxed">
+              Our flagship series of open-source language models, optimized for what matters most: <span class="text-text-primary font-medium">performance, efficiency, and transparency</span>.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-accent-purple shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                  <strong class="text-text-primary">Moxin-7B Series:</strong> SOTA performance in a compact size. Available as LLM and VLM.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-accent-purple shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                  <strong class="text-text-primary">Extreme Quantization:</strong> Running 70B+ models (like Kimi K2) on consumer hardware with minimal loss.
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-accent-purple shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <div>
+                  <strong class="text-text-primary">Moxin Voice:</strong> Local, low-latency ASR and TTS for natural human-computer interaction.
+                </div>
+              </li>
+            </ul>
+            <div class="pt-4">
+              <a href="/products/models" class="inline-flex items-center gap-2 text-accent-purple font-bold hover:gap-3 transition-all">
+                Explore Models
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex-1 relative">
+            <div class="absolute -inset-4 bg-gradient-to-r from-purple-100 to-blue-50 rounded-full blur-3xl opacity-30"></div>
+            <div class="relative bg-white border border-gray-200 rounded-3xl p-8 shadow-xl">
+              <div class="space-y-6">
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl">🧠</div>
+                    <div>
+                      <div class="font-bold text-text-primary">Moxin-7B-LLM</div>
+                      <div class="text-xs text-text-secondary">Instruction & Coding</div>
+                    </div>
+                  </div>
+                  <div class="text-accent-purple font-bold">SOTA</div>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl">👁️</div>
+                    <div>
+                      <div class="font-bold text-text-primary">Moxin-7B-VLM</div>
+                      <div class="text-xs text-text-secondary">Visual Understanding</div>
+                    </div>
+                  </div>
+                  <div class="text-accent-purple font-bold">New</div>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl">🗣️</div>
+                    <div>
+                      <div class="font-bold text-text-primary">Moxin Voice</div>
+                      <div class="text-xs text-text-secondary">Real-time ASR and TTS</div>
+                    </div>
+                  </div>
+                  <div class="text-accent-purple font-bold">Local</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -70,7 +157,7 @@ import HeroBackground from '../components/HeroBackground.astro';
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
             <h3 class="text-xl font-bold text-text-primary">Extreme Efficiency</h3>
-            <p class="text-text-secondary leading-relaxed">Run 70B+ models on consumer hardware. KTransformers optimizes inference for up to 30x lower latency.</p>
+            <p class="text-text-secondary leading-relaxed">Run 70B+ models on consumer hardware. Ominix Edge optimizes inference for up to 30x lower latency.</p>
           </div>
           <div class="space-y-4 p-6 rounded-2xl hover:bg-white transition-colors duration-300">
             <div class="w-12 h-12 bg-cyan-50 rounded-xl flex items-center justify-center text-accent-cyan mb-4">

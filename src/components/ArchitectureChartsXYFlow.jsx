@@ -380,7 +380,7 @@ const SystemArchitectureFlow = () => {
       id: 'IE1',
       type: 'infrastructure',
       position: { x: 300, y: 1100 },
-      data: { label: 'KTransformers', description: 'Datacenter Optimized' },
+      data: { label: 'Server Inference', description: 'Datacenter Optimized' },
       sourcePosition: Position.Bottom,
       targetPosition: Position.Top,
     },
@@ -503,8 +503,8 @@ const SystemArchitectureFlow = () => {
   );
 };
 
-// KTransformers Optimization Flow - Matching exact mermaid structure
-const KTransformersFlow = () => {
+// Inference Optimization Flow - Matching exact mermaid structure
+const InferenceOptimizationFlow = () => {
   const initialNodes = [
     // Pretrained Models
     {
@@ -532,7 +532,7 @@ const KTransformersFlow = () => {
       data: { label: 'Mixtral MoE', description: 'Sparse Architecture' },
     },
 
-    // KTransformers Features
+    // Optimization Features
     {
       id: 'CPU',
       type: 'middleware',
@@ -592,14 +592,14 @@ const KTransformersFlow = () => {
   ];
 
   const initialEdges = [
-    // From Pretrained Models to KTransformers Features
+    // From Pretrained Models to Optimization Features
     { id: 'DS-CPU', source: 'DS', target: 'CPU', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
     { id: 'Kimi-GPU', source: 'Kimi', target: 'GPU', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
     { id: 'Qwen-MEM', source: 'Qwen', target: 'MEM', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
     { id: 'Mixtral-MOE', source: 'Mixtral', target: 'MOE', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
     { id: 'Mixtral-QUANT', source: 'Mixtral', target: 'QUANT', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
 
-    // From KTransformers Features to Performance Metrics
+    // From Optimization Features to Performance Metrics
     { id: 'CPU-PERF1', source: 'CPU', target: 'PERF1', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
     { id: 'GPU-PERF2', source: 'GPU', target: 'PERF2', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
     { id: 'MEM-PERF3', source: 'MEM', target: 'PERF3', animated: true, style: { stroke: '#7f8c8d', strokeWidth: 2 } },
@@ -636,11 +636,11 @@ const BenchmarkFlow = ({ chartType = 'inference' }) => {
         return {
           title: 'Inference Performance',
           data: [
-            { name: 'DeepSeek-R1', ktransformers: 227.85, standard: 45, edge: 120 },
-            { name: 'DeepSeek-V3', ktransformers: 40, standard: 12, edge: 80 },
-            { name: 'Qwen Series', ktransformers: 180, standard: 65, edge: 95 },
-            { name: 'Mixtral MoE', ktransformers: 95, standard: 35, edge: 60 },
-            { name: 'Kimi K2', ktransformers: 150, standard: 55, edge: 85 },
+            { name: 'DeepSeek-R1', server: 227.85, standard: 45, edge: 120 },
+            { name: 'DeepSeek-V3', server: 40, standard: 12, edge: 80 },
+            { name: 'Qwen Series', server: 180, standard: 65, edge: 95 },
+            { name: 'Mixtral MoE', server: 95, standard: 35, edge: 60 },
+            { name: 'Kimi K2', server: 150, standard: 55, edge: 85 },
           ]
         };
       case 'application':
@@ -719,7 +719,7 @@ const ArchitectureChartsXYFlow = ({ chartType = 'system' }) => {
       case 'system':
         return <SystemArchitectureFlow />;
       case 'ktransformers':
-        return <KTransformersFlow />;
+        return <InferenceOptimizationFlow />;
       case 'inference':
       case 'application':
       case 'agent':

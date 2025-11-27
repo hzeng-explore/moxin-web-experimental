@@ -18,7 +18,7 @@ const initialNodes = [
     {
         id: 'models',
         position: { x: 250, y: 200 },
-        data: { label: 'Moxin LM (LLM/Voice)' },
+        data: { label: 'Moxin LM' },
         style: { background: '#5E5CE6', color: 'white', border: 'none', borderRadius: '12px', width: 200, padding: '12px', fontWeight: '600', boxShadow: '0 4px 12px rgba(94, 92, 230, 0.3)' },
     },
     {
