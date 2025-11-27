@@ -1,14 +1,6 @@
 ---
 const currentPath = Astro.url.pathname;
 const base = import.meta.env.BASE_URL;
-const normalizePath = (p) => {
-  if (p.startsWith(base)) {
-    return p.slice(base.length);
-  }
-  return p;
-};
-const relativePath = normalizePath(currentPath);
-const isZh = relativePath.startsWith('zh') || relativePath.startsWith('/zh');
 
 // Helper to construct paths with base
 const mkPath = (path) => {
@@ -17,29 +9,29 @@ const mkPath = (path) => {
 };
 
 const navLinks = [
-  { text: isZh ? '首页' : 'Home', href: mkPath(isZh ? '/zh/' : '/') },
-  { text: isZh ? '解决方案' : 'Solutions', href: mkPath(isZh ? '/zh/solutions/' : '/solutions/') },
-  { text: isZh ? '服务' : 'Vision', href: mkPath(isZh ? '/zh/services/' : '/vision/') },
-  { text: isZh ? '开发者' : 'Developers', href: mkPath(isZh ? '/zh/developers/' : '/developers/') },
+  { text: 'Home', href: mkPath('/') },
+  { text: 'Solutions', href: mkPath('/solutions/') },
+  { text: 'Vision', href: mkPath('/vision/') },
+  { text: 'Developers', href: mkPath('/developers/') },
 ];
 
-const productsText = isZh ? '产品' : 'Products';
-const computeText = isZh ? '⚡ 计算与推理' : '⚡ Compute & Inference';
-const computeDesc = isZh ? 'OminiX Edge' : 'OminiX Edge';
-const modelsText = isZh ? '🧠 模型' : '🧠 Models';
-const modelsDesc = isZh ? 'Moxin LM & 语音' : 'Moxin LM & Voice';
-const agentsText = isZh ? '🤖 智能体' : '🤖 Agents';
-const agentsDesc = isZh ? 'MoFA 框架' : 'MoFA Framework';
-const appText = isZh ? '💻 应用' : '💻 Application';
-const appDesc = isZh ? 'Moly 客户端' : 'Moly Client';
-const deployText = isZh ? '部署' : 'Deploy';
+const productsText = 'Products';
+const computeText = '⚡ Compute & Inference';
+const computeDesc = 'OminiX Edge';
+const modelsText = '🧠 Models';
+const modelsDesc = 'Moxin LM & Voice';
+const agentsText = '🤖 Agents';
+const agentsDesc = 'MoFA Framework';
+const appText = '💻 Application';
+const appDesc = 'Moly Client';
+const deployText = 'Deploy';
 
-const getLink = (path) => mkPath(isZh ? `/zh${path}` : path);
+const getLink = (path) => mkPath(path);
 ---
 
 <nav class="glass-nav fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
-    <a href={mkPath(isZh ? "/zh/" : "/")} class="flex items-center space-x-2 group">
+    <a href={mkPath("/")} class="flex items-center space-x-2 group">
       <img src={mkPath("/images/moxin.png")} alt="Moxin Intelligence" class="h-8 w-auto" />
       <span class="text-text-primary font-semibold text-xl tracking-tight">Moxin Organization</span>
     </a>
@@ -77,72 +69,15 @@ const getLink = (path) => mkPath(isZh ? `/zh${path}` : path);
     </div>
 
     <div class="flex items-center space-x-4">
-      <!-- Language Switcher -->
-      <button id="lang-switcher" class="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1 text-sm">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        <span id="lang-text">EN</span>
-      </button>
-      <div class="h-4 w-px bg-gray-300"></div>
       <a href="https://github.com/moxin-org" target="_blank" class="text-text-secondary hover:text-text-primary transition-colors">
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
       </a>
       <a href="https://huggingface.co/moxin-org" target="_blank" class="text-text-secondary hover:text-text-primary transition-colors">
         <img src={mkPath("/images/hf-logo-pirate.svg")} alt="Hugging Face" class="w-5 h-5" />
       </a>
-      <!-- <button class="bg-text-primary text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-black/80 transition-all">
-        {deployText}
-      </button> -->
     </div>
   </div>
 </nav>
-
-<script define:vars={{ base }}>
-  const langSwitcher = document.getElementById('lang-switcher');
-  const langText = document.getElementById('lang-text');
-  
-  // Helper to remove base path
-  const stripBase = (path) => {
-    if (path.startsWith(base)) {
-      return path.slice(base.length);
-    }
-    return path;
-  };
-
-  // Helper to add base path
-  const addBase = (path) => {
-    const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
-    return `${cleanBase}${path.startsWith('/') ? path : '/' + path}`;
-  };
-
-  if (langSwitcher && langText) {
-    // Check current URL to set initial state
-    const currentPath = window.location.pathname;
-    const relativePath = stripBase(currentPath);
-
-    if (relativePath.startsWith('/zh') || relativePath.startsWith('zh')) {
-      langText.innerText = '中文';
-    } else {
-      langText.innerText = 'EN';
-    }
-
-    langSwitcher.addEventListener('click', () => {
-      const currentPath = window.location.pathname;
-      const relativePath = stripBase(currentPath);
-      
-      if (relativePath.startsWith('/zh') || relativePath.startsWith('zh')) {
-        // Switch to English
-        // Remove /zh or /zh/
-        let newRelative = relativePath.replace(/^\/?zh\/?/, '/');
-        if (newRelative === '') newRelative = '/';
-        window.location.href = addBase(newRelative);
-      } else {
-        // Switch to Chinese
-        const newRelative = relativePath === '/' ? '/zh/' : `/zh${relativePath}`;
-        window.location.href = addBase(newRelative);
-      }
-    });
-  }
-</script>
 
 <style is:global>
   .glass-nav {
